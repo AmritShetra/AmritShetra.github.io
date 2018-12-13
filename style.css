@@ -1,0 +1,53 @@
+body {
+	font-family: 'Work Sans', sans-serif;
+	background-color: #f9faff;
+}
+
+.navigation {
+	padding-bottom: 30px;
+}
+
+.navbar-brand {
+	font-family: 'Museo_Slab_500_2', 'Work Sans', sans-serif;
+	color: grey !important;
+	font-size: 30px;
+}
+
+.navbar-brand:hover {
+	color: rgba(229, 71, 75, 0.75) !important;
+}
+
+.nav-item {
+	font-size: 18px;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+.intro{
+	font-size: 19px;
+	padding-top: 80px;
+}
+
+.intro .container p { 
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: black;
+}
+
+hr {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.footer p {
+	color: white;
+	font-size: 13px;
+}

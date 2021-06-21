@@ -4,17 +4,37 @@ html {
 
 body {
 	font-family: "Work Sans", sans-serif;
+	background-color: #f9faff;
 }
 
 #one {
 	height: 100vh;
 	background: linear-gradient(#002661, #92ffc0);
 	color: white;
+}
 
-	display: flex;
+#one header { 
+	position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+#one header a {
+	text-decoration: none;
+	color: grey;
+	padding: 3px;
+}
+
+#one header a:hover {
+	color: rgba(229, 71, 75, 0.75);
+}
+
+#one .container {
+	height: 100%;
+    display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
 	text-align: center;
 }
 
@@ -41,10 +61,40 @@ body {
 	}
 }
 
-#two {
-	height: 100vh;
-}
 
 #two .container {
-	padding: 5% 5% 5% 5%;
+	padding: 5%;
+	text-align: center;
+}
+
+#two #about p {
+	font-size: large;
+}
+
+#two hr {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-img-top {
+    transition: transform .2s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: black;
+}
+
+.footer p {
+	margin: 0;
+	text-align: center;
+	font-size: small;
 }

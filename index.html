@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -24,60 +24,59 @@
   </head>
 
   <body>
-    <div id="one">
-      <header>
-        <a href="http://www.github.com/amritshetra" target="_blank" rel="noopener noreferrer"><i class="animated fadeInDown fab fa-github fa-2x"></i></a>
-				<a href="http://www.linkedin.com/in/amritshetra" target="_blank" rel="noopener noreferrer"><i class="animated fadeInDown fab fa-linkedin fa-2x"></i></a>
-      </header>
-      <div class="container">
-          <h3 class="animated fadeInDown">Hi, I'm <b id="name">Amrit</b>.</h3>
-          <p class="animated fadeInDown">I'm a final year Computer Science student at Brunel University London.</p>
-          <a href="#two">
-            <i id="arrow" class="fas fa-angle-double-down fa-2x"></i>
-          </a>
-      </div>
+    
+    <div class="header">
+      <a href="http://www.github.com/amritshetra" target="_blank" rel="noopener noreferrer">
+        <i class="animated fadeInDown fab fa-github fa-2x"></i>
+      </a>
+      <a href="http://www.linkedin.com/in/amritshetra" target="_blank" rel="noopener noreferrer">
+        <i class="animated fadeInDown fab fa-linkedin fa-2x"></i>
+      </a>
     </div>
 
-    <div id="two">
-      <div class="container">
-        <div id="about">
-          <h4>About me</h4>
-          <br>
-            <p>
-              I'm a software developer and soon-to-be uni graduate, interested in using a range of tools to solve all sorts of problems.
-              Through coursework, personal projects and a year in industry, I've become proficient in languages such as Java and Python, and technologies such as Docker and Django.
-              Similarly, I decided to create this website to gain more experience with web development.
-              Furthermore, I've lead and worked as part of several teams, frequently employing the Agile and Scrum methodologies.
-            </p>
-        </div>
-        <hr>
-        <div id="projects">
-          <h4>Here's some things I've worked on:</h4>
-          <br>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card h-100">
-                <img class="card-img-top" src="images/finch.png" alt="Finch Robot">
-                <div class="card-body">
-                  <h5 class="card-title">Follow Light</h5>
-                  <p class="card-text">During the Year 1 Group Project,  I created a Java program that allows a Finch robot to follow a light source and calculates statistics based on its movement.</p>
-                  <a href="https://github.com/AmritShetra/Follow-Light" class="btn btn-primary">View on GitHub</a>
-                </div>
+    <div class="container">
+      
+      <div id="intro" class="animated fadeInDown">
+        <h3>Hi, I'm <b id="name">Amrit</b>.</h3>
+        <p>I'm a final year Computer Science student at Brunel University London.</p>
+        <a onclick="switchSection('intro', 'projects')">
+          <i id="arrow" class="fas fa-angle-double-down fa-2x"></i>
+        </a>
+      </div>
+
+      <div id="projects" class="animated fadeInUp">
+        <a onclick="switchSection('projects', 'intro')">
+          <i id="arrow" class="fas fa-angle-double-up fa-2x"></i>
+        </a>
+        <br><br><br>
+        <h4>Here's some things I've worked on:</h4>
+        <br>
+        <div class="row">
+          <!-- Card one-->
+          <div class="col-sm-6">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/finch.png" alt="Finch Robot">
+              <div class="card-body">
+                <h5 class="card-title">Follow Light</h5>
+                <p class="card-text">During the Year 1 Group Project,  I created a Java program that allows a Finch robot to follow a light source and calculates statistics based on its movement.</p>
+                <a href="https://github.com/AmritShetra/Follow-Light" class="btn btn-primary">View on GitHub</a>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="card h-100">
-                <img class="card-img-top" src="images/tictactoe.png" alt="Tic-Tac-Toe">
-                <div class="card-body">
-                  <h5 class="card-title">Tic-Tac-Toe</h5>
-                  <p class="card-text">In my spare time, I learned JavaFX and developed a single-player Tic-Tac-Toe game. It features a clean &amp; functional GUI, updating scoreboard and a basic AI computer to play against.</p>
-                  <a href="https://github.com/AmritShetra/Tic-Tac-Toe" class="btn btn-primary">View on GitHub</a>
-                </div>
+          </div>
+          <!-- Card two-->
+          <div class="col-sm-6">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/tictactoe.png" alt="Tic-Tac-Toe">
+              <div class="card-body">
+                <h5 class="card-title">Tic-Tac-Toe</h5>
+                <p class="card-text">In my spare time, I learned JavaFX and developed a single-player Tic-Tac-Toe game. It features a clean &amp; functional GUI, updating scoreboard and a basic AI computer to play against.</p>
+                <a href="https://github.com/AmritShetra/Tic-Tac-Toe" class="btn btn-primary">View on GitHub</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
 
     <div class="footer">
@@ -85,6 +84,7 @@
     </div>
 
     <!-- JavaScript -->
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>

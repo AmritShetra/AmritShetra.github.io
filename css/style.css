@@ -73,6 +73,14 @@ body {
 	display: none;
 }
 
+#projects .row {
+	justify-content: center;
+}
+
+#projects .col-sm-6 {
+	padding: 1%;
+}
+
 .card {
 	color: black;
 	background-color: rgba(255, 255, 255, 0.7);

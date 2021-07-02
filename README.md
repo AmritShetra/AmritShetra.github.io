@@ -1,5 +1,7 @@
 ## AmritShetra.github.io
-My website/personal portfolio which is currently in development, and being hosted via GitHub Pages.
+My website and personal portfolio which is regularly updated and hosted via GitHub Pages.
+
+[Here's](amritshetra.github.io) a link for convenience.
 
 ### Technologies used
 * HTML

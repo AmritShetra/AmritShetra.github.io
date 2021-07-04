@@ -1,7 +1,7 @@
 ## AmritShetra.github.io
 My website and personal portfolio which is regularly updated and hosted via GitHub Pages.
 
-[Here's](amritshetra.github.io) a link for convenience.
+[Here's](https://amritshetra.github.io) a link for convenience.
 
 ### Technologies used
 * HTML

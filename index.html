@@ -14,6 +14,9 @@
     <!-- Animate.CSS -->
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 
+    <!-- Devicons -->
+    <link href='https://cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
+
     <!-- Fonts -->
 	  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 	  <link rel="stylesheet" href="css/museo_slab.css" type="text/css" charset="utf-8" />
@@ -39,13 +42,36 @@
       <div id="intro" class="animated fadeInDown">
         <h3>Hi, I'm <b id="name">Amrit</b>.</h3>
         <p>I'm a software developer and recent graduate from Brunel University London.</p>
-        <a onclick="switchSection('intro', 'projects')">
+        <a onclick="switchSection('intro', 'skills')">
           <i id="arrow" class="fas fa-angle-double-down fa-2x"></i>
         </a>
       </div>
 
-      <div id="projects" class="animated fadeInUp">
-        <a onclick="switchSection('projects', 'intro')">
+      <div id="skills" class=" hidden animated fadeInDown">
+        <a onclick="switchSection('skills', 'intro')">
+          <i id="arrow" class="fas fa-angle-double-up fa-2x"></i>
+        </a>
+        <br><br><br>
+        <p>Here are some of the languages and tools I've used before:</p>
+        <span class="devicons devicons-java"></span>
+        <span id="java">Java</span>
+        <span class="devicons devicons-python"></span>
+        <span id="python">Python</span>
+        <span class="devicons devicons-android"></span>
+        <span id="android">Android</span>
+        <span class="devicons devicons-git"></span>
+        <span id="git">Git</span>
+        <span class="devicons devicons-docker"></span>
+        <span id="docker">Docker</span>
+        <br><br><br>
+        <p>I'm always open to learning new skills.</p>
+        <a onclick="switchSection('skills', 'projects')">
+          <i id="arrow" class="fas fa-angle-double-down fa-2x"></i>
+        </a>
+      </div>
+
+      <div id="projects" class="hidden animated fadeInUp">
+        <a onclick="switchSection('projects', 'skills')">
           <i id="arrow" class="fas fa-angle-double-up fa-2x"></i>
         </a>
         <br><br><br>

@@ -13,3 +13,20 @@ function switchSection(current, next) {
 		document.documentElement.style.overflow = "auto";
 	});
 }
+
+var icons = document.getElementsByClassName('devicons');
+for (var i = 0; i < icons.length; i++) {
+  icons[i].addEventListener('mouseover', function (event) {
+    //console.log(event.target, 'is hovered');
+	//console.log(event.target.className.split("-")[1]);
+	var specificIcon = event.target.className.split("-")[1];
+	document.getElementById(specificIcon).style.visibility = "visible";
+  });
+
+  icons[i].addEventListener('mouseout', function (event) {
+    //console.log(event.target, 'is gone');
+	//console.log(event.target.className.split("-")[1]);
+	var specificIcon = event.target.className.split("-")[1];
+	document.getElementById(specificIcon).style.visibility = "hidden";
+  });
+}
